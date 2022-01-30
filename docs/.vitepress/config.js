@@ -1,16 +1,32 @@
+const storesSidebar = [
+  { text: "Introduction", link: "/stores/" },
+  { text: "Spares", link: "/stores/spares" },
+  { text: "Tires", link: "/stores/tires" },
+  { text: "Tools", link: "/stores/tools" },
+  { text: "Consumables", link: "/stores/consumables" },
+  { text: "Scraps", link: "/stores/scraps" },
+];
+
 module.exports = {
   title: "ABS-Intranet",
   themeConfig: {
-    nav: [],
-    sidebar: [
-      { text: "Introduction", link: "/" },
-      { text: "Maintenance", link: "/mmc" },
-      { text: "Quality", link: "/quality" },
-      { text: "Marketing", link: "/marketing" },
-      { text: "Logistics", link: "/logistics" },
+    nav: [
+      { text: "Documentation", link: "/" },
       { text: "Stores", link: "/stores/" },
-      { text: "Finance", link: "/finance" },
-      { text: "Human Resource", link: "/hr" },
+      { text: "Contact", link: "/contact/" },
     ],
+    sidebar: {
+      "/stores/": storesSidebar,
+    },
+    // sidebar: [
+    //   { text: "Introduction", link: "/" },
+    //   // { text: "Maintenance", link: "/mmc" },
+    //   // { text: "Quality", link: "/quality" },
+    //   { text: "Marketing", link: "/marketing/" },
+    //   // { text: "Logistics", link: "/logistics" },
+    //   { text: "Stores", link: "/stores/" },
+    //   // { text: "Finance", link: "/finance" },
+    //   // { text: "Human Resource", link: "/hr" },
+    // ],
   },
 };
