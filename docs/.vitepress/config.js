@@ -11,12 +11,27 @@ module.exports = {
   title: "ABS-Intranet",
   themeConfig: {
     nav: [
-      { text: "Documentation", link: "/" },
-      { text: "Stores", link: "/stores/" },
+      { text: "ABS-Intranet", link: "/" },
+      {
+        text: "Documentation",
+        items: [
+          { text: "Maintenance", link: "/mmc/" },
+          { text: "Quality", link: "/quality/" },
+          { text: "Marketing", link: "/marketing/" },
+          { text: "Logistics", link: "/logistics/" },
+          { text: "Stores", link: "/stores/" },
+        ],
+      },
+
       { text: "Contact", link: "/contact/" },
     ],
     sidebar: {
       "/stores/": storesSidebar,
+      "/marketing/": [
+        { text: "Introduction", link: "/marketing/" },
+        { text: "Customers", link: "/marketing/customers" },
+        { text: "Quotations", link: "/marketing/quotations" },
+      ],
     },
     // sidebar: [
     //   { text: "Introduction", link: "/" },

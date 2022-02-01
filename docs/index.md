@@ -12,6 +12,6 @@ An **Approved Maintenance Organization**, or **AMO**, operates under its quality
 
 Under AMO's MOE, more detailed procedures may be described in separate manuals called Quality Procedures or QPs, which do not require approval from authorities. However, in the event that QPs are in contradiction to MOE, MOE shall take precedence.
 
-This documentation, as previously explained, is in no way written to be the official manual or QPs, or extension of MOE. Information within this document, although described in a thorough manner, is not considered a Quality Procedure.
+This documentation, as previously explained, is in no way written to be the official manual, QP, MOE, or extension thereof. Information within this document, regardless of its validity, is not considered official.
 
 Nothing in this document shall be consider binding to the organization, its employees or to represent the organization or its employees in its operation for airworthiness. User is advised to regulary study the MOE and all QPs. Links to original information from MOE or QPs are appended on each page - if applicable.

@@ -40,16 +40,16 @@ As a rule of thumb, remember that all items may have expiration date. It is alwa
 
 ## Labels
 
-All items, really, everything in Airborne Support must have appropriate identifying labels in the form of stickers. A label should be able to at least identify the item by its part number, serial number - if any, ABS batch number or OEM batch number.
+All items in Airborne Support must have appropriate identifying labels in the form of stickers. A label should be able to at least identify the item by its part number, serial number - if any, ABS batch number or OEM batch number.
 
-In case of life limited items, a _red_ shelf life label is needed together with ID label. Integrated label - ID and shelf life - is currently not approved by MOE.
+In case of life limited items, a **red** shelf life label is needed together with ID label. Integrated label - ID and shelf life - is currently not approved by MOE.
 
-::: warning
+::: danger
 **DO NOT USE** any item without a ID label
 :::
 
 ::: warning
-**TAKE CAUTIONS** on any item without expiration label
+**TAKE CAUTION** on any item without expiration label
 :::
 
 Label examples:
