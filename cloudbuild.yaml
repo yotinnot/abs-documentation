@@ -1,9 +1,9 @@
 steps:
-  - name: "gcr.io/cloud-builders/npm:node-16"
+  - name: "node:16"
     entrypoint: npm
     args: ["install"]
 
-  - name: "gcr.io/cloud-builders/npm:node-16"
+  - name: "node:16"
     entrypoint: npm
     args: ["run", "docs:build"]
 
