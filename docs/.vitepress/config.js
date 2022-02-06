@@ -33,6 +33,9 @@ module.exports = {
         { text: "Quotations", link: "/marketing/quotations" },
       ],
     },
+    lastUpdated: "Last Updated",
+    // editLink: true,
+
     // sidebar: [
     //   { text: "Introduction", link: "/" },
     //   // { text: "Maintenance", link: "/mmc" },
@@ -43,6 +46,5 @@ module.exports = {
     //   // { text: "Finance", link: "/finance" },
     //   // { text: "Human Resource", link: "/hr" },
     // ],
-    lastupdated: true,
   },
 };
