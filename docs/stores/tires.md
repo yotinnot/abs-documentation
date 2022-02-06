@@ -4,6 +4,8 @@
 
 [[toc]]
 
+## Introduction
+
 Initially included in Spares module, tires require a lot of storage space and move through inventory in bi-direction manner, e.g. removed from wheels and kept in another storage. The tires then given its own module to manage.
 
 Tires module deals with receiving of new tires from both customers and vendors.

@@ -43,5 +43,6 @@ module.exports = {
     //   // { text: "Finance", link: "/finance" },
     //   // { text: "Human Resource", link: "/hr" },
     // ],
+    lastupdated: true,
   },
 };

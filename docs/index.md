@@ -1,3 +1,11 @@
+<script setup>
+  import Dialog from './components/Dialog.vue'
+</script>
+
+<Dialog></Dialog>
+::: warning
+Experimental.
+:::
 # ABS-Intranet
 
 ## Introduction

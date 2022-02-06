@@ -10,15 +10,11 @@ Before you begin, there are some topics that you need to have a general understa
 
 In aviation, all parts, tools and consumables all require proper documentation and traceability from the birth to cradle. All items must have associated paper works, part numbers, serial numbers and manufacturer batch numbers and must be easily identifiable. Although quite rare, manufacturers may find defects in their products' workmanship and need to recall them.
 
-With proper documentation, we can quickly identify in which component, on which aircraft, the parts were installed.
-
-These items play crucial roles in the airworthiness and safe operation of aircraft. In the past, a single wrong-sized screw unknowingly installed had caused a catastrophe.
-
-**Suspected Unapproved Parts** or **SUP** is a training subject that addesses the importance of using treaceable, approved parts against fake ones.
-
-Aircraft is made of metal, specifically aluminium (you may call it aluminum), at least the conventional one and until recently. Spare parts however, come in many meterials, plastic, steel, carbon or rubber. Each requires different care and storage conditions.
+With proper documentation, we can quickly identify in which component, on which aircraft, the parts were installed. **Suspected Unapproved Parts** or **SUP** is a training subject that addresses the importance of using and identifying treaceable, approved parts as opposed to fake ones.
 
 ## Storage conditions
+
+Aircraft is made of metal, specifically aluminium (you may call it aluminum), at least the conventional one and until recently. Spare parts however, come in many meterials, plastic, steel, carbon or rubber. Each requires different care and storage conditions.
 
 Unless required otherwise, all spare parts and consumables should be kept in a cool and dry place with controlled temperature and humidity. Suggested temperature is **not more than 25°c**.
 
@@ -74,9 +70,9 @@ Label examples:
 
 In most pages or tabs, there is an option to print a report for that page. Reports come in 2 formats, Google Sheet and `.csv`.
 
-If you use airborne-support email address to sign in into Google Chrome, you should not have a problem generating Google sheet reports. Otherwise, you can still generate but will not be able to view it. This is because the system only allows authenticated user under this organization to view the files.
+If you use airborne-support email address to sign in into Google Chrome, you should not have any problem generating Google sheet reports. Otherwise, you can still generate but will not be able to view it. This is because the system only allows authenticated user under this organization to view the files.
 
-If you generate `.csv` file, the browser will download `.csv` file onto your computer. `.csv` files can be view using all spreadsheet applications, Excel, Google Sheets or even Notepad.
+On the contrary, If you generate `.csv` file, the browser will download `.csv` file onto your computer. `.csv` files can be view using all spreadsheet applications, Excel, Google Sheets or even Notepad.
 
 ::: info
 All printed or generated reports are considered "uncontrolled", which means they are true at the time of genration only.
