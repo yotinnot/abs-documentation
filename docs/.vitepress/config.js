@@ -34,7 +34,10 @@ module.exports = {
       ],
     },
     lastUpdated: "Last Updated",
-    // editLink: true,
+    repo: "https://github.com/yotinnot/abs-documentation",
+    editLinks: true,
+    docsDir: "docs",
+    docsBranch: "main",
 
     // sidebar: [
     //   { text: "Introduction", link: "/" },
