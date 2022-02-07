@@ -24,4 +24,4 @@ This documentation, as previously explained, is in no way written to be the offi
 
 Nothing in this document shall be consider binding to the organization, its employees or to represent the organization or its employees in its operation for airworthiness. User is advised to regulary study the MOE and all QPs. Links to original information from MOE or QPs are appended on each page - if applicable.
 
-Any questions regarding the above mentioned documents please refer to qa@airborne-support.com.
+Any questions regarding the above mentioned documents please contact qa@airborne-support.com.
