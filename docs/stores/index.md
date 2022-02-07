@@ -8,7 +8,7 @@ Before you begin, there are some topics that you need to have a general understa
 
 ## Traceability
 
-In aviation, all parts, tools and consumables all require proper documentation and traceability from the birth to cradle. All items must have associated paper works, part numbers, serial numbers and manufacturer batch numbers and must be easily identifiable. Although quite rare, manufacturers may find defects in their products' workmanship and need to recall them.
+In aviation, all parts, tools and consumables require proper documentation and traceability from the birth to grave. All items must have associated paperwork with part numbers, serial numbers and manufacturer batch numbers and must be easily identifiable. Although quite rare, manufacturers may find defects in their product workmanship and need to recall them.
 
 With proper documentation, we can quickly identify in which component, on which aircraft, the parts were installed. **Suspected Unapproved Parts** or **SUP** is a training subject that addresses the importance of using and identifying treaceable, approved parts as opposed to fake ones.
 
