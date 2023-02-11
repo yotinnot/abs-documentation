@@ -78,7 +78,7 @@ function signIn() {
   width: 350px;
   max-width: 90%;
   background-color: #fff;
-  border-radius: 12px;
+  border-radius: 8px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
   padding: 20px;
 }
@@ -86,6 +86,7 @@ function signIn() {
 .container__content {
   display: flex;
   flex-direction: column;
+  color: #000;
 }
 
 .container__button {
@@ -98,7 +99,7 @@ function signIn() {
   border-radius: 6px;
   outline: none;
   border: none;
-  background-color: #22487d;
+  background-color: #2196f3;
   color: #fff;
   padding: 10px 20px;
   box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.5);

@@ -39,10 +39,11 @@ export default {
           { text: "Stores", link: "/stores/" },
         ],
       },
-
-      { text: "Contact", link: "/contact/" },
+      {
+        text: "Change Log",
+        link: "https://github.com/yotinnot/abs-documentation/commits/main",
+      },
     ],
-    lastUpdated: true,
     editLink: {
       pattern:
         "https://github.com/yotinnot/abs-documentation/edit/main/docs/:path",
@@ -59,4 +60,5 @@ export default {
       },
     ],
   },
+  lastUpdated: true,
 };
