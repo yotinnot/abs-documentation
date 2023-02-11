@@ -6,11 +6,11 @@ This type of search bar allows usings operators to search for data. The followin
 
 - `+` **Plus sign**
 
-A leading or trailing plus sign indicates that this word must be present in each row that is returned.
+A leading plus sign indicates that this word must be present in each row that is returned.
 
 - `-` **Minus sign**
 
-A leading or trailing minus sign indicates that this word must not be present in each row that is returned.
+A leading minus sign indicates that this word must not be present in each row that is returned.
 
 ::: warning Note
 The - operator acts only to exclude rows that are otherwise matched by other search terms. Thus, a search that contains only terms preceded by - returns an empty result. It does not return “all rows except those containing any of the excluded terms.”

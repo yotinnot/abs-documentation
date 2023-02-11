@@ -1,6 +1,6 @@
 # Stores
 
-# Introduction
+## Introduction
 
 Stores Module addresses Intranet's functionalities on inventory management, consumables, tools and their shelf life.
 

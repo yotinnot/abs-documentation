@@ -8,6 +8,7 @@ const storesSidebar = [
 ];
 
 export default {
+  lang: "en-US",
   title: "ABS-Intranet",
   themeConfig: {
     nav: [
@@ -40,7 +41,7 @@ export default {
         ],
       },
       {
-        text: "Change Log",
+        text: "Changelog",
         link: "https://github.com/yotinnot/abs-documentation/commits/main",
       },
     ],
@@ -48,7 +49,6 @@ export default {
       pattern:
         "https://github.com/yotinnot/abs-documentation/edit/main/docs/:path",
     },
-    cleanUrls: true,
     socialLinks: [
       // {
       //   icon: "github",
@@ -60,5 +60,6 @@ export default {
       },
     ],
   },
+  cleanUrls: true,
   lastUpdated: true,
 };
