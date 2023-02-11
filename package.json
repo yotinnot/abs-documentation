@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "docs:dev": "vitepress dev docs",
+    "docs:dev": "vitepress dev docs --port 3001",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs"
   },
@@ -12,6 +12,6 @@
   "license": "ISC",
   "devDependencies": {
     "sass": "^1.49.7",
-    "vitepress": "^0.21.6"
+    "vitepress": "^1.0.0-alpha.45"
   }
 }
