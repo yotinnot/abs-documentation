@@ -59,6 +59,7 @@ export default {
         link: "https://www.linkedin.com/company/airborne-support",
       },
     ],
+    outline: "deep",
   },
   cleanUrls: true,
   lastUpdated: true,
