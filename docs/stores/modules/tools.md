@@ -4,8 +4,6 @@
 
 ![tools](/assets/tools/tools.png)
 
-This module is one of the most advanced modules in the system because it was developed later than other modules.
-
 The tool module deals with the usage, control and calibration of the tools. Each tool, depending on relevant manuals, requires different calibration interval but at any case not greater than once a year. NDT related tools may demand more frequent calibration interval. More in depth requirements can be found under `Store Training`.
 
 All measuring tools and tools that have some kind of scale, measurement need to be controlled under this module.
@@ -47,8 +45,6 @@ To withdraw a tool:
 1. Click submit.
 
 To return a tool: proceed the same steps as above. The system will put the status of the tool automatically, e.g. if the tool was previously borrowed, the system will return the tool, and vice versa. Therefore, user must record the movement everytime.
-
----
 
 ## Tool status labels/tags
 
@@ -114,6 +110,20 @@ Any tool, whether serviceable or inactive, can be set to calibrating to indicate
 Tool status label normally set itself automatically depending on its calibration data as explain before. Some label may be set manually, however, it is recommended that you let the system set the label. To do this, click on the label then select `Auto assign`.
 
 `Auto assign` is the default status set to tool upon receiving and on calibration data update. When in doubt, set to this status.
+
+## Schedule tool calibration
+
+Sometimes you may need to schedule a tool for calibration in case you have multiple tools of the same type and want to spread the calibration out. To do so:
+
+1. Hover over the Next Cal Date of the tool you want to schedule. A clock icon will appear.
+1. Click on the date to open the calendar.
+1. A Schedule Calibration dialog will appear.
+1. Select the year and month you want to schedule the calibration for.
+1. Click `Schedule` to save.
+
+Scheduled items will not be included in the monthly notification of their original due date. They will only be notified on the scheduled date instead.
+
+To edit or cancel a scheduled calibration, click on the date again and a dialog will appear. You can edit the date or cancel the schedule.
 
 ## Adding calibration records
 

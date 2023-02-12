@@ -22,10 +22,22 @@ export default {
         text: "Introduction",
         items: [
           { text: "Disclaimer", link: "/disclaimer/" },
-          { text: "Searching and Filtering", link: "/search-filter/" },
           {
-            text: "Advanced Search Options",
-            link: "/advanced-search-options/",
+            text: "Concepts",
+            items: [
+              {
+                text: "Searching and Filtering",
+                link: "/concepts/search-filter/",
+              },
+              {
+                text: "Advanced Search Options",
+                link: "/concepts/advanced-search-options/",
+              },
+              {
+                text: "Identification Numbers",
+                link: "/concepts/ids/",
+              },
+            ],
           },
         ],
       },

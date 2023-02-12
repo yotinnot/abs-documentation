@@ -32,4 +32,4 @@ The search function is called when the user presses the `Enter` key. The client 
 
 Full-Text Search Bar will have a yellow search icon on the left side of the search bar.
 
-The search bar input can be multiple words and accept operators. For example, if the user types in `hello world`, the search bar will search for `hello` and `world`. See [Advanced Search Options](/advanced-search-options/) for more information.
+The search bar input can be multiple words and accept operators. For example, if the user types in `hello world`, the search bar will search for `hello` and `world`. See [Advanced Search Options](/concepts/advanced-search-options/) for more information.

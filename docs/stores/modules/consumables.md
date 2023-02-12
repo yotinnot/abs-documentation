@@ -8,31 +8,41 @@ Traceability is important with consumables. Read [Traceability](/stores/#traceab
 
 ### Understanding ID numbers
 
-Each consumable item have 3 differenct IDs associated to it. These IDs are assigned automatically by the system and are not running numbers but unique. [Read more about unique IDs.](/ids/)
+Each consumable item have 3 differenct IDs associated to it. These IDs are assigned automatically by the system and are not running numbers but unique. [Read more about unique IDs.](/concepts/ids/#unique-ids)
 
 #### Item ID
 
-As its name suggests, Item ID is the internal identification number for the item. Just like part numbers, you can say Item ID is equivalent to part number but for different uses.
+As its name suggests, Item ID is the internal identification number for the item. Just like part numbers, you can say Item ID is equivalent to part number but for different uses. Item ID is permanent and cannot be changed.
 
 ##### Item ID vs SKU
 
-Stock Keeping Unit, or SKU, is also an identification number (I should say text), however, it is human readable and can be changed to reflect the item. When a person see an SKU, they should be able to know what item it is and may not have to search the database for description.
+Stock Keeping Unit, or SKU, is also an identification number. It is intended for user to easily remember. When a person see an SKU, they should be able to know what item it is and may not have to search the database for description.
 
-Once an item is created, it is assigned an Item ID. This Item ID is permanent and cannot be changed. However, SKU can be changed to reflect the item.
+Unlike Item ID, SKU can be modified.
 
-For example, `SHOE-NIKE-BLUE-32` is blue Nike shoes size 32 (note the hierarchy). If you later found out it's not actually blue but rather indigo, you can update the SKU to `SHOE-NIKE-INDIGO-32` - indigo Nike shoes size 32, like so:
+For example, `SHOE-NIKE-BLUE-32` is blue Nike shoes size 32 (note the hierarchy). If you later found out it's not actually blue but rather pink, you can update the SKU to `SHOE-NIKE-PINK-32` - indigo Nike shoes size 32, like so:
 
-| Name                  | SKU                 |
-| :-------------------- | :------------------ |
-| Blue Nike shoes, 32   | SHOE-NIKE-BLUE-32   |
-| Indigo Nike shoes, 32 | SHOE-NIKE-INDIGO-32 |
-| Blue Nike shoes, 29   | SHOE-NIKE-BLUE-29   |
+From:
 
-Note that SKU is always singular - no s'.
+| Item ID | Name                      | SKU                     |
+| :------ | :------------------------ | :---------------------- |
+| 12345   | **_Blue_** Nike shoes, 32 | SHOE-NIKE-**_BLUE_**-32 |
+| 13346   | Blue Nike shoes, 29       | SHOE-NIKE-BLUE-29       |
 
-Item ID, on the other hand, is static - permanent, and is used by the system to identify the item.
+To:
 
-With the above example, if that Nike shoes have Item ID of 111, when you update the SKU, those shoes will still have Item ID of 111 but a different SKU.
+| Item ID | Name                      | SKU                     |
+| :------ | :------------------------ | :---------------------- |
+| 12345   | **_Pink_** Nike shoes, 32 | SHOE-NIKE-**_PINK_**-32 |
+| 13346   | Blue Nike shoes, 29       | SHOE-NIKE-BLUE-29       |
+
+::: tip
+SKU is always singular.
+:::
+
+With the above example, if that Nike shoes have Item ID of 12345, when you update the SKU, those shoes will still have Item ID of 12345 but a different SKU.
+
+[Read more about SKU.](/concepts/ids/#skus)
 
 ##### Item ID vs part number
 
@@ -104,38 +114,43 @@ To add new consumable:
 1. If this item should have expiration date, select `Shelf life`. **This choice is permanent**
 1. Review the form then click `+ add` to submit
 
-After creating an item/part number, the inventory will show that this item has 0 stock. You will need to deposit items.
+After creating an item/part number, the inventory will show that this item has 0 stock. You will need to [deposit it first](#depositing-consumables).
 
 ## Updating consumables
 
-You can edit or update consumable data at anytime without affecting the transaction. However, you cannot edit shelf life data of an item, i.e. switching between having shelf life and not having shelf life.
+You can edit or update consumable data at anytime without affecting existing transactions. However, you cannot edit shelf life data of an item, i.e. switching between having shelf life and not having shelf life.
 
 To edit item:
 
-1. Click on `Item ID`. `Item ID` should be all number with 16 digits, e.g. `4799704042831872`
+1. Click on Item ID. Item ID should be all number with 16 digits, e.g. `4799704042831872`
 1. Edit the fields as required
-1. Upload picture if item if any
+1. Optional - delete or upload picture
 1. Click `Save` to submit
 
-Note if you edit SKU or part number, although this is propagate to all transactions with this Item ID, however, printed label will not be affected (duh). If feasable, you should reprint the labels.
+::: info
+If you edit the SKU, the SKU will be updated in all existing transactions.
+:::
 
 ## Depositing consumables
 
-Before depositing items, make sure that they passed receiving inspection process. The receiving inspection process is not described in this document; you must consult with QA or Receiving Inspector for further details.
+Before depositing items, make sure that they passed receiving inspection process. The receiving inspection process is not described in this document; you must consult with Compliance Department or Receiving Inspector for further details.
 
-If items with the same Item ID have different expiration dates, you should deposit them one by one.
+If items with the same Item ID have different expiration dates, you should deposit them separately.
+
+To deposit an item:
 
 1. Navigate to Stock or In tab
 1. Click on `Deposit`
 1. Select item to be deposited from the dropdown menu: the items are listed by SKU
 1. Enter all required fields.
 1. If item has shelf life, make sure to input its expiration date
-1. Upload its certificate, if any
+1. Optional - upload its certificate
+1. Enter Receiving Batch Number obtained from Receiving Inspector
 1. Review the form then click `Submit`
 
 ### Updating deposited consumables
 
-You can edit deposited items only if you need to edit OEM batch number, quantity, price or upload certificates. If you want to edit the item itself (Item ID), you must set the quantity to `0`.
+You can edit deposited items only if you need to edit OEM batch number, quantity, price, Receiving Batch Number or to upload certificates. If you want to edit the consumable itself, e.g. change from one item to another item, you must set the quantity to `0` and deposit the new item.
 
 To edit deposited items:
 
@@ -223,7 +238,7 @@ To print Shelf Life label:
 
    - If exact expiration date is unknown e.g. the item only tells the manufactured date and the duration you can keep it or the quarter of the year it was made:
 
-     1. If exact manufacture year, month and date is know, type in the manufacture date in `Expiration or MFG date`. The format **MUST** be YYYY-MM-DD, e.g. 2020-12-31
+     1. If exact manufacture year, month and date is known, type in the manufacture date in `Expiration or MFG date`. The format **MUST** be YYYY-MM-DD, e.g. 2020-12-31
 
      1. If only manufacture year and month is known, type in the manufacture year in `Expiration or MFG date` with the format YYYY-MM, e.g. 2020-06
 

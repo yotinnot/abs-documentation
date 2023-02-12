@@ -6,21 +6,22 @@ service: documentation-service
 
 handlers:
   - url: /
-    static_files: docs/.vitepress/dist
+    # static_dir: docs/.vitepress/dist/index.html
+    static_files: docs/.vitepress/dist/index.html
     upload: docs/.vitepress/dist/.*
-    # script: auto
     secure: always
     redirect_http_response_code: 301
 
-  - url: /(.*\.(js|css))$
-    static_files: docs/.vitepress/dist
-    upload: www/(.*)
-    secure: always
-    redirect_http_response_code: 301
+  # - url: /(.*\.(js|css))$
+  #   static_dir: docs/.vitepress/dist
+  #   # static_files: docs/.vitepress/dist/\1
+  #   # upload: www/(.*)
+  #   secure: always
+  #   redirect_http_response_code: 301
 
-  - url: /.*
-    static_files: docs/.vitepress/dist
+  - url: /(.*\.(js|css|html))$
+    # static_dir: docs/.vitepress/dist
+    static_files: docs/.vitepress/dist/\1
     upload: docs/.vitepress/dist/.*
-    # script: auto
     secure: always
     redirect_http_response_code: 301
