@@ -37,7 +37,15 @@ export default {
           { text: "Quality", link: "/quality/" },
           { text: "Marketing", link: "/marketing/" },
           { text: "Logistics", link: "/logistics/" },
-          { text: "Stores", link: "/stores/" },
+          {
+            text: "Stores",
+            items: [
+              { text: "Introduction", link: "/stores/" },
+              { text: "Spares", link: "/stores/modules/spares" },
+              { text: "Consumables", link: "/stores/modules/consumables" },
+              { text: "Tools", link: "/stores/modules/tools" },
+            ],
+          },
         ],
       },
       {

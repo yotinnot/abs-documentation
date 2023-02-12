@@ -19,7 +19,7 @@ handlers:
     redirect_http_response_code: 301
 
   - url: /.*
-    static_files: docs/.vitepress/dist/index.html
+    static_files: docs/.vitepress/dist
     upload: docs/.vitepress/dist/.*
     # script: auto
     secure: always

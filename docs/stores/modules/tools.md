@@ -1,9 +1,5 @@
 # Tools
 
-## Table of contents
-
-[[toc]]
-
 ## Introduction
 
 ![tools](/assets/tools/tools.png)

@@ -77,3 +77,13 @@ On the contrary, If you generate `.csv` file, the browser will download `.csv` f
 ::: info
 All printed or generated reports are considered "uncontrolled", which means they are true at the time of genration only.
 :::
+
+## Modules
+
+Stores Module is divided into 3 sub modules:
+
+- #### [Spares](./modules/spares)
+
+- #### [Consumables](./modules/consumables)
+
+- #### [Tools](./modules/tools)

@@ -4,23 +4,21 @@
 Traceability is important with consumables. Read [Traceability](/stores/#traceability)
 :::
 
-## Table of contents
-
-[[toc]]
-
 ## Introduction
 
 ### Understanding ID numbers
 
-Each consumable item have 3 differenct IDs associated to it. These IDs are assigned automatically by the system and are not running numbers but unique.
+Each consumable item have 3 differenct IDs associated to it. These IDs are assigned automatically by the system and are not running numbers but unique. [Read more about unique IDs.](/ids/)
 
 #### Item ID
 
-As its name suggests, Item ID is the internal identification number for the item, same as a part number. You can say Item ID is equivalent to part number but for different uses.
+As its name suggests, Item ID is the internal identification number for the item. Just like part numbers, you can say Item ID is equivalent to part number but for different uses.
 
-- _Item ID vs SKU_
+##### Item ID vs SKU
 
-Stock Keeping Unit, or SKU, is also an identification number (I should say text), however, it is human readable and can be changed to reflect the item. When a person see an SKU, he/she should be able to know what item it is and may not have to search the database for description.
+Stock Keeping Unit, or SKU, is also an identification number (I should say text), however, it is human readable and can be changed to reflect the item. When a person see an SKU, they should be able to know what item it is and may not have to search the database for description.
+
+Once an item is created, it is assigned an Item ID. This Item ID is permanent and cannot be changed. However, SKU can be changed to reflect the item.
 
 For example, `SHOE-NIKE-BLUE-32` is blue Nike shoes size 32 (note the hierarchy). If you later found out it's not actually blue but rather indigo, you can update the SKU to `SHOE-NIKE-INDIGO-32` - indigo Nike shoes size 32, like so:
 
@@ -36,19 +34,19 @@ Item ID, on the other hand, is static - permanent, and is used by the system to 
 
 With the above example, if that Nike shoes have Item ID of 111, when you update the SKU, those shoes will still have Item ID of 111 but a different SKU.
 
-- _Item ID vs part number_
+##### Item ID vs part number
 
 This is obvious, part number is assigned by the manufacturer or seller of the item. Item ID is assigned by the system when you create it. Therefore, an item may or may not have part number but will always have Item ID.
 
 #### Deposit ID
 
-In order to be able to track which when the item comes in and when it should be used - First In, First Out, FIFO - and to track life limited consumables, a Deposit ID is assigned to each item at receiving/depositing. Different Item ID should be deposited to the system separately, thus getting different Deposit ID. But importantly, the same Item ID but with different expiration date **_must be deposited separately_**.
+In order to be able to track which item comes in and when it should be used - First In, First Out, FIFO - and to track life limited consumables, a Deposit ID is assigned to each item at receiving/depositing. Different Item ID should be deposited to the system separately, thus getting different Deposit ID. But importantly, the same Item ID but with different expiration date **_must be deposited separately_**.
 
 ::: warning
-Items with expiration dates must be deposited individually
+Items with expiration dates, regardless of being the same SKU, must be deposited individually.
 :::
 
-You can think of Deposit ID as a batch number, same thing.
+You can think of Deposit ID as a batch number.
 
 #### Withdraw ID
 
@@ -56,7 +54,11 @@ This is the opposite of Deposit ID and is used to identify transactions with per
 
 ## Navigation
 
-Consumable module is subdivided into 4 tabs:
+Consumable module is subdivided into 5 tabs:
+
+### Tab: Requests
+
+This tab is under development and will be used to request consumables from Stores.
 
 ### Tab: Stock
 
@@ -81,6 +83,12 @@ Storeman is advised to regulary visit this page for any expired items to discard
 :::
 
 ## Creating new consumables
+
+::: warning
+
+Shelf life option is **permanent**. Once you select `Shelf life`, you cannot deselect it and any item deposits will require shelf life identification. If you want to change it, you must create a new item.
+
+:::
 
 To add new consumable:
 
